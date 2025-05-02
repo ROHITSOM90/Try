@@ -9,6 +9,25 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
     <style>
+         /* Add these styles to make tool cards clickable and properly styled as links */
+a.tool-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+a.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--card-hover);
+    border-color: var(--primary-color);
+    text-decoration: none;
+}
+
+a.tool-card:focus {
+    outline: none;
+}
         :root {
             --primary-color: #4a6cf7;
             --secondary-color: #ff6b6b;
@@ -97,25 +116,6 @@
             }
         }
     </style>
-    /* Add these styles to make tool cards clickable and properly styled as links */
-a.tool-card {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-a.tool-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    background-color: var(--card-hover);
-    border-color: var(--primary-color);
-    text-decoration: none;
-}
-
-a.tool-card:focus {
-    outline: none;
-}
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 </head>
